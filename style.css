@@ -1,0 +1,281 @@
+/*modifier la scrollbar du div elevator*/
+.bare_scroll_1::-webkit-scrollbar
+{ 
+	width: 7px; /*largeur de la scrollbar verticale*/
+	/*height: 5px; /*hauteur de la scrollbar horizontale*/
+}
+  
+.bare_scroll_1::-webkit-scrollbar-track
+{ 
+	background-color: white; /*couleur du fond de la scrollbar*/	
+}
+
+.bare_scroll_1::-webkit-scrollbar-thumb
+{ /*la petite bande qui monte/descend*/
+	background-color:  gray /*couleur de l'ascenseur*/;
+}
+
+/*modifier la scrollbar du div elevator*/
+.bare_scroll_2::-webkit-scrollbar
+{ 
+	width: 0px; /*largeur de la scrollbar verticale*/
+	/*height: 5px; /*hauteur de la scrollbar horizontale*/
+}
+  
+.bare_scroll_2::-webkit-scrollbar-track
+{ 
+	background-color: white; /*couleur du fond de la scrollbar*/	
+}
+
+.bare_scroll_2::-webkit-scrollbar-thumb
+{ /*la petite bande qui monte/descend*/
+	background-color:  gray /*couleur de l'ascenseur*/;
+}
+
+.bare_scroll_3::-webkit-scrollbar
+{ 
+	width: 10px; /*largeur de la scrollbar verticale*/
+	/*height: 5px; /*hauteur de la scrollbar horizontale*/
+}
+  
+.bare_scroll_3::-webkit-scrollbar-track
+{ 
+	background-color: white; /*couleur du fond de la scrollbar*/	
+}
+
+.bare_scroll_3::-webkit-scrollbar-thumb
+{ /*la petite bande qui monte/descend*/
+	background-color:  gray /*couleur de l'ascenseur*/;
+}
+
+
+.bare_scroll_1 {
+	overflow: auto;
+}
+
+.bare_scroll_2 {
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+#header, #recherches {
+	margin: 15px;
+	border: 1px solid gray;
+}
+
+#header {
+	height: 150px;
+}
+
+#recherches
+{
+	min-height: 100px;
+}
+		
+#header #droite {
+	position: absolute;
+	right: 0;
+	width: 50%;
+	height: 150px;
+	padding: 20px;
+}
+#header #gauche {
+	position: absolute;
+	width: 50%;
+	height: 150px;
+	padding: 20px;
+}
+
+section#gauche {
+	/*border: 1px solid black;*/
+	position: absolute;
+	min-height: 100%;
+	margin-left: 10px;
+	width: 49%;
+}
+
+section#gauche table {
+	height: 100%;
+	border: none;
+	margin: 10px;
+}
+
+#mails, #appels, #chat, #actions, #memos {
+	height: 150px;
+	border: 1px solid gray;
+	cursor: default;
+	z-index: 999;
+}
+
+#mails #contenu div, #appels #contenu div, #chat #contenu div, #actions #contenu div, #memos #contenu div {
+	margin: 5px;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+#appels #contenu table {
+	height: 100px;
+}
+
+#appels #contenu table th, #appels #contenu table td {
+	padding: 5px;
+}
+
+#appels #racroch {
+	background: red;
+	padding: 5px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#appels #racroch:hover {
+	border: 1px solid white;
+}
+
+#bare {
+	border-bottom: 1px solid gray;
+	height: 20px;
+}
+
+#signe {
+	cursor: pointer;
+	width: 15px;
+	padding-left: 5px;
+	height: 20px;
+}
+
+section#gauche table tr td div #bare center {
+	margin-top: -18px;
+	font-weight: bold;
+}
+
+#signe:hover {
+	background: red;
+	color: white;
+}
+
+section#droite {
+	/*border: 1px solid black;*/
+	position: absolute;
+	right: 10px;
+	min-height: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+section#droite table {
+	position: absolute;
+	right: 10px;
+}
+
+section#gauche table td {
+	width: 100%;
+}
+
+section#gauche table tr td div #contenu {
+	border: none;
+}
+
+#later_cmd {
+	margin: 10px;
+	width: 97%;
+	border: 1px solid gray;
+}
+
+#later_cmd #contenu td {
+	text-align: center;
+}
+
+#tab_cmds {
+	margin: 10px;
+	width: 97%;
+	border: 1px solid gray;
+	border-bottom: none;
+}
+
+#tab_cmds .ligne {
+	text-align: center;
+}
+
+#tab_cmds .ligne td {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.gray {
+	background: rgba(128,128,128, 0.5);
+	color: white;
+}
+
+#header .gray {
+	padding: 2px;
+	display: inline-block;
+	border-radius: 5px 5px 5px 5px;
+	line-height: 25px;
+}
+.nom_email {
+	display: inline-block;
+	overflow: hidden;
+	height: 20px;
+	width: 20px;
+	margin-bottom: -5px;
+}
+
+.nom_email #click {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	/*border: 1px solid gray;*/
+	background: red;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+#connexion {
+	text-align: center;
+	margin-top: 300px;
+	z-index: 999;
+}
+
+#login, #pw, #connect {
+	font-family: sans-serif;
+	font-size: 20px;
+	border: 1px solid gray;
+	padding-left: 10px;
+}
+
+#login {
+	border-bottom: none;
+	border-right: none;
+	width: 300px;
+	height: 100px;
+}
+
+#pw {
+	border-top: none;
+	border-right: none;
+	width: 300px;
+	height: 100px;
+	margin-left: -5px;
+}
+
+#connect {
+	position: absolute;
+	top: 0;
+	background: white;
+	margin-top: 300px;
+	cursor: pointer;
+	border-radius: 0 50px 50px 0;
+}
+
+#connect:hover {
+	box-shadow: 1px 1px 1px;
+}
+
+section#droite, section#gauche {
+	min-height: 100%;
+}

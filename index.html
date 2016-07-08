@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Optivad - Anphitek </title>
+		<script src="jquery-1.12.0.min.js"></script>
+		<script src="jquery-migrate-1.2.1.min.js"></script>
+		<script src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body class="bare_scroll_3">
+		<div id="recherches">
+			
+		</div>
+		<div id="header">
+			<div id="gauche">
+				Nom : <b>Nicolas</b>
+				<br>
+				<br>
+				Prénom : <b>Choquet</b>
+				<br>
+				<br>
+				Site : <b>piscine-clic.fr</b>
+			</div>
+			<div id="droite">
+				Tel(s) : <span class="gray"><b>07.63.20.76.30</b></span>, <span class="gray"><b>06.35.20.25.26</b></span>
+				<br>
+				<br>
+				Mail(s) : <span class="gray"><b>nicolachoquet06250@gmail.com</b></span>, <span class="gray"><b>nicolas.choquet@anphitek.fr</b></span>
+			</div>
+		</div>
+		
+		<section id="gauche">
+			<table>
+				<tr>
+					<td>
+						<div id="mails">
+							<div id="bare" class="gray">
+								<div id="signe">
+									+
+								</div>
+								<center>
+									Mails
+								</center>
+							</div>
+							<div id="contenu" class="bare_scroll_2">
+								<center><b> Désactiver </b></center>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="appels">
+							<div id="bare" class="gray">
+								<div id="signe">
+									+
+								</div>
+								<center>
+									Appels
+								</center>
+							</div>
+							<div id="contenu" class="bare_scroll_2">
+								<!--<center><b> Désactiver </b></center>-->
+								<table>
+									<tr>
+										<th class="gray" colspan=3>
+											Demande de renseignements sur une Pompes
+										</th>
+										<th rowspan=3 style="background: green; color: white; width: 170px;">
+											En Cours <span id="loader"></span><br><br>
+											<span id="racroch">Raccrocher</span>
+										</th>
+									</tr>
+									<tr>
+										<th>
+											Choquet Nicolas
+										</th>
+										<th>
+											05/07/2016 - 15:04
+										</th>
+										<th rowspan=2>
+											<!--10:35--> <span id="temps"></span>
+										</th>
+									</tr>
+									<tr>
+										<th>
+											07.63.20.76.30
+										</th>
+										<th>
+											05/07/2016 - <!--15:14--><span id="loader_date"></span>
+										</th>
+									</tr>
+								</table>
+								
+								<hr>
+								
+								<table>
+									<tr>
+										<th class="gray" colspan=3>
+											Trop d'argent débité pour une épuisette
+										</th>
+										<th rowspan=3 style="background: red; color: white; width: 170px;">
+											Terminé
+										</th>
+									</tr>
+									<tr>
+										<th>
+											Choquet Nicolas
+										</th>
+										<th>
+											03/07/2016 - 10:04
+										</th>
+										<th rowspan=2>
+											05:30
+										</th>
+									</tr>
+									<tr>
+										<th>
+											07.63.20.76.30
+										</th>
+										<th>
+											05/07/2016 - 15:09
+										</th>
+									</tr>
+								</table>
+								<hr>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="chat">
+							<div id="bare" class="gray">
+								<div id="signe">
+									+
+								</div>
+								<center>
+									Chat Hotline
+								</center>
+							</div>
+							<div id="contenu" class="bare_scroll_2">
+								<center><b> Désactiver </b></center>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="memos">
+							<div id="bare" class="gray">
+								<div id="signe">
+									+
+								</div>
+								<center>
+									Mémos
+								</center>
+							</div>
+							<div id="contenu" class="bare_scroll_2">
+								<center><b> Désactiver </b></center>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="actions">
+							<div id="bare" class="gray">
+								<div id="signe">
+									+
+								</div>
+								<center>
+									Actions
+								</center>
+							</div>
+							<div id="contenu" class="bare_scroll_2">
+								<center><b> Désactiver </b></center>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section id="droite">
+			<table id="later_cmd">
+				<tr id="titre">
+					<th>
+						Dernière commande
+					</th>
+					<th>
+						Date
+					</th>
+					<th>
+						Heure
+					</th>
+					<th>
+						N° commande
+					</th>
+				</tr>
+				<tr>
+					<td colspan=4>
+						<hr>
+					</td>
+				</tr>
+				<tr id="contenu">
+					<td>
+						Nom du produit commandé 
+					</td>
+					<td>
+						05/07/2016
+					</td>
+					<td>
+						10:55
+					</td>
+					<td>
+						0152458458C
+					</td>
+				</tr>
+			</table>
+			<br><br><br>
+			<table id="tab_cmds">
+				<tr id="titre">
+					<th>
+						Date commande
+					</th>
+					<th>
+						N° commande
+					</th>
+				</tr>
+				<tr>
+					<td colspan=2>
+						<hr>
+					</td>
+				</tr>
+				<tr class="ligne">
+					<td>
+						05/07/2016
+					</td>
+					<td>
+						0152458458C
+					</td>
+				</tr>
+				<tr class="ligne gray">
+					<td>
+						04/07/2016
+					</td>
+					<td>
+						0152459458C
+					</td>
+				</tr>
+				<tr class="ligne">
+					<td>
+						03/07/2016
+					</td>
+					<td>
+						0151458458C
+					</td>
+				</tr>
+				<tr class="ligne gray">
+					<td>
+						03/07/2016
+					</td>
+					<td>
+						0151458458C
+					</td>
+				</tr>
+				<tr class="ligne">
+					<td>
+						03/07/2016
+					</td>
+					<td>
+						0151458458C
+					</td>
+				</tr>
+				<tr class="ligne gray">
+					<td>
+						03/07/2016
+					</td>
+					<td>
+						0151458458C
+					</td>
+				</tr>
+				<tr class="ligne">
+					<td>
+						03/07/2016
+					</td>
+					<td>
+						0151458458C
+					</td>
+				</tr>
+				<tr class="ligne gray">
+					<td>
+						03/07/2016
+					</td>
+					<td>
+						0151458458C
+					</td>
+				</tr>
+			</table>
+		</section>
+	</body>
+</html>
